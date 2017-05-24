@@ -1,11 +1,11 @@
-header {
-    background-color: #244751;
-    color: #E8FDFF;
-}
-
 body {
     background-color: whitesmoke;
     font-family: 'Nunito', sans-serif;
+}
+
+header {
+    background-color: #244751;
+    color: #E8FDFF;
 }
 
 main {
