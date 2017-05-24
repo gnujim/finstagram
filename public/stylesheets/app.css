@@ -1,0 +1,28 @@
+header {
+    background-color: #244751;
+    color: #E8FDFF;
+}
+
+body {
+    background-color: whitesmoke;
+    font-family: 'Nunito', sans-serif;
+}
+
+main {
+    background-color: white;
+    padding: 16px;
+}
+
+h2:hover {
+    color: #5a7da5;
+}
+
+.post {
+    margin-bottom: 48px;
+}
+
+.post .user-info img {
+    border-radius: 50%;
+}
+
+
