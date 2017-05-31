@@ -36,21 +36,21 @@
             
             <article class="post">
                 <div class="user-info">
-                    <img src="http://naserca.com/images/kirk_whalum.jpg" alt="kirk_whalum">
-                    <h2>kirk_whalum</h2>
-                    <h3>1 hour ago</h3>
+                    <img src="<%= @post_shark[:avatar_url] %>" alt="<%= @post_shark[:username] %>">
+                    <h2><%= @post_shark[:username] %></h2>
+                    <h3><%= @post_shark[:humanized_time_ago] %></h3>
                 </div>
                 <a class="photo" href="#">
-                    <img src="http://naserca.com/images/whale.jpg" alt="post from kirk_whalum">
+                    <img src="<%= @post_shark[:photo_url] %>" alt="post from <%= @post_shark[:username] %>">
                 </a>
                 <div class="actions">
-                    0 likes
-                    <span class="comment-count">0 comments</span>
+                    <%= @post_shark[:like_count] %> likes
+                    <span class="comment-count"><%= @post_shark[:comment_count] %> comment</span>
                 </div>
                 <ul class="comments">
                     <li>
                         <p>
-                            kirk_whalum: #weekendvibes
+                            <%= @post_shark[:comments][0][:username] %>: <%= @post_shark[:comments][0][:text] %>
                         </p>
                     </li>
                 </ul>    
